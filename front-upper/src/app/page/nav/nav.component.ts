@@ -10,7 +10,7 @@ export class NavComponent implements OnInit {
     { "id": "home", "title": "Home", "status": true },
     { "id": "servicos", "title": "Serviços", "status": false },
     { "id": "nos", "title": "Nós", "status": false },
-    { "id": "sobre", "title": "Contato", "status": false },
+    { "id": "contato", "title": "Contato", "status": false },
   ]
   constructor() { }
 
@@ -28,9 +28,4 @@ export class NavComponent implements OnInit {
       }
     }
   }
-
-  getRef(item) {
-    return item.value.id
-  }
-
 }
