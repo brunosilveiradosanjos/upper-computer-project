@@ -8,11 +8,13 @@ import { PageComponent } from './page/page.component';
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { RouterModule, Routes } from '@angular/router';
+import { PainelComponent } from './painel/painel.component';
 
 const appRoutes: Routes = [
   { path: '', component: PageComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'cadastro', component: CadastroComponent }
+  { path: 'cadastro', component: CadastroComponent },
+  { path: 'painel', component: PainelComponent }
 ]
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ const appRoutes: Routes = [
     NavComponent,
     PageComponent,
     LoginComponent,
-    CadastroComponent
+    CadastroComponent,
+    PainelComponent
   ],
   imports: [
     BrowserModule,
