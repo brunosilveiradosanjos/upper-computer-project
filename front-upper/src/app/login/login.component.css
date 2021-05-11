@@ -52,3 +52,10 @@
 .btn-custom:focus {
   box-shadow: 0 0 0 0.2rem rgb(33, 190, 164, 0.25);
 }
+table {
+  cursor: default;
+}
+.modal-body {
+  font-size: 1rem;
+}
+

@@ -1,4 +1,4 @@
-<div class="d-flex justify-content-center align-items-center login-container">
+<div class="d-flex justify-content-start align-items-center login-container">
   <form class="login-form text-center">
     <h1 class="mb-5 font-weight-light text-uppercase">Login</h1>
     <div class="form-group">
@@ -17,10 +17,183 @@
     <button type="button" [routerLink]="['/painel']"
       class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase">Log in</button>
     <p class="mt-3 font-weight-normal">Não tem cadastro?
-      <a [routerLink]="['/cadastro']">
-        <strong>Cadastrar</strong>
-      </a>
-    </p>
+      <button type="button" class="btn btn-light" data-toggle="modal"
+                data-target="#staticBackdrop_5">Cadastrar</button>
+      </p>
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop_5" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel_5" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel_5">Cadastro</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+
+
+
+              <form>
+
+                <div class="form-row">
+                  <div class="col-md-12 mb-1">
+                    <label for="validationDefault01">Nome</label>
+                    <input type="text" class="form-control" id="validationDefault01" value="" required>
+                  </div>                  
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-6
+                  mb-1">
+                    <label for="validationDefault01">Telefone</label>
+                    <input type="text" class="form-control" id="validationDefault01" value="" required>
+                  </div>
+                  <div class="col-md-6
+                  mb-1">
+                    <label for="validationDefault01">Celular</label>
+                    <input type="text" class="form-control" id="validationDefault01" value="" required>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-12
+                  mb-1">
+                    <label for="validationDefault01">E-mail Cliente</label>
+                    <input type="text" class="form-control" id="validationDefault01" value="" required>
+                  </div>
+                  <div class="col-md-12
+                  mb-1">
+                    <label for="validationDefault01">E-mail Corp</label>
+                    <input type="text" class="form-control" id="validationDefault01" value="" required>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-12 mb-1">
+                    <label for="validationDefault01">Nome Empresa</label>
+                    <input type="text" class="form-control" id="validationDefault01" value="" required>
+                  </div>
+                  <div class="col-md-12 mb-1">
+                    <label for="validationDefault01">CNPJ</label>
+                    <input type="text" class="form-control" id="validationDefault01" value="" required>
+                  </div>                  
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-9 mb-1">
+                    <label for="validationDefault02">Rua Empresa</label>
+                    <input type="text" class="form-control" id="validationDefault02" value="" required>
+                  </div>
+                  <div class="col-md-3 mb-1">
+                    <label for="validationDefault02">Número</label>
+                    <input type="text" class="form-control" id="validationDefault02" value="" required>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-8 mb-1">
+                    <label for="validationDefault02">Bairro</label>
+                    <input type="text" class="form-control" id="validationDefault02" value="" required>
+                  </div>
+                  <div class="col-md-4 mb-1">
+                    <label for="validationDefault02">Cep</label>
+                    <input type="text" class="form-control" id="validationDefault02" value="" required>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationDefault01">Cidade</label>
+                    <input type="text" class="form-control" id="validationDefault01" value="" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationDefault04">Sigla</label>
+                    <select class="custom-select" id="validationDefault04" required>
+                      <option selected disabled value=""></option>
+                      <option>AC</option>
+                      <option selected disabled value=""></option>
+                      <option>AL</option>
+                      <option selected disabled value=""></option>
+                      <option>AP</option>
+                      <option selected disabled value=""></option>
+                      <option>AM</option>
+                      <option selected disabled value=""></option>
+                      <option>BA</option>
+                      <option selected disabled value=""></option>
+                      <option>CE</option>
+                      <option selected disabled value=""></option>
+                      <option>DF</option>
+                      <option selected disabled value=""></option>
+                      <option>ES</option>
+                      <option selected disabled value=""></option>
+                      <option>GO</option>
+                      <option selected disabled value=""></option>
+                      <option>MA</option>
+                      <option selected disabled value=""></option>
+                      <option>MT</option>
+                      <option selected disabled value=""></option>
+                      <option>MS</option>
+                      <option selected disabled value=""></option>
+                      <option>MG</option>
+                      <option selected disabled value=""></option>
+                      <option>PA</option>
+                      <option selected disabled value=""></option>
+                      <option>PB</option>
+                      <option selected disabled value=""></option>
+                      <option>PR</option>
+                      <option selected disabled value=""></option>
+                      <option>PE</option>
+                      <option selected disabled value=""></option>
+                      <option>PI</option>
+                      <option selected disabled value=""></option>
+                      <option>RJ</option>
+                      <option selected disabled value=""></option>
+                      <option>RN</option>
+                      <option selected disabled value=""></option>
+                      <option>RS</option>
+                      <option selected disabled value=""></option>
+                      <option>RO</option>
+                      <option selected disabled value=""></option>
+                      <option>RR</option>
+                      <option selected disabled value=""></option>
+                      <option>SC</option>
+                      <option selected disabled value=""></option>
+                      <option>SP</option>
+                      <option selected disabled value=""></option>
+                      <option>SE</option>
+                      <option selected disabled value=""></option>
+                      <option>TO</option>
+                    </select>
+                  </div>                          
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                      Aceitar os termos
+                    </label>
+                  </div>
+                </div>
+              </form>
+
+
+
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary">Cadastrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    
     <button type="button" class="btn btn-light" [routerLink]="['']">Retornar</button>
   </form>
 </div>

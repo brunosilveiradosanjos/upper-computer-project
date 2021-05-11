@@ -1,7 +1,11 @@
 <div class="card mx-2 my-2">
-  <h5 class="card-header">Painel Colaborador</h5>
+  <h5 class="card-header">Painel Colaborador: Michael</h5>
   <div class="card-body">
     <div class="accordion" id="accordionExample">
+      
+      <button type="button" class="btn btn-light" [routerLink]="['/']"> < voltar</button>
+      <br>
+      
 
 
       <div class="card">
@@ -39,51 +43,62 @@
                             <input type="text" class="form-control" id="validationDefault01" value="Liquigás" required>
                           </div>
                           <div class="col-md-6 mb-3">
-                            <label for="validationDefault02">Last name</label>
-                            <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+                            <label for="validationDefault02">Projeto</label>
+                            <input type="text" class="form-control" id="validationDefault02" value="App Delivery" required>
                           </div>
                         </div>
 
                         <div class="form-row">
-                          <div class="col-md-12 mb-3">
-                            <label for="validationDefault01">Empresa</label>
-                            <input type="text" class="form-control" id="validationDefault01" value="Liquigás" required>
+                          <div class="col-md-12
+                           mb-3">
+                            <label for="validationDefault01">Equipe</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="Desenvolvimento" required>
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col-md-12
+                           mb-3">
+                            <label for="validationDefault01">Atividade</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="Criação de App" required>
                           </div>
                         </div>
 
                         <div class="form-row">
                           <div class="col-md-6 mb-3">
-                            <label for="validationDefault01">Teste</label>
-                            <input type="text" class="form-control" id="validationDefault01" value="Liquigás" required>
+                            <label for="validationDefault01">Data de Inicio</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="25/02/2021" required>
                           </div>
                           <div class="col-md-6 mb-3">
-                            <label for="validationDefault02">Last name</label>
-                            <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+                            <label for="validationDefault02">Data Prevista</label>
+                            <input type="text" class="form-control" id="validationDefault02" value="10/04/2021" required>
                           </div>
                         </div>
 
                         <div class="form-row">
                           <div class="col-md-6 mb-3">
-                            <label for="validationDefault03">City</label>
-                            <input type="text" class="form-control" id="validationDefault03" required>
+                            <label for="validationDefault01">Valor</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="R$ 13.500,85" required>
                           </div>
-                          <div class="col-md-3 mb-3">
-                            <label for="validationDefault04">State</label>
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault04">Status</label>
                             <select class="custom-select" id="validationDefault04" required>
-                              <option selected disabled value="">Choose...</option>
-                              <option>...</option>
+                              <option selected disabled value=""></option>
+                              <option>Gerência</option>
+                              <option selected disabled value=""></option>
+                              <option>Requisitos</option>
+                              <option selected disabled value=""></option>
+                              <option>Homologação</option>
+                              <option selected disabled value=""></option>
+                              <option>Concluído</option>
                             </select>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <label for="validationDefault05">Zip</label>
-                            <input type="text" class="form-control" id="validationDefault05" required>
-                          </div>
+                          </div>                          
                         </div>
                         <div class="form-group">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
                             <label class="form-check-label" for="invalidCheck2">
-                              Agree to terms and conditions
+                              Deseja mesmo fazer essas alterações?
                             </label>
                           </div>
                         </div>
@@ -111,30 +126,38 @@
             <table class="table table-hover table-striped">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
+                  <th scope="col">Empresa:</th>
+                  <td scope="col">Liquigás</td>                  
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <th scope="col">Projeto:</th>
+                  <td scope="col">App Delivery</td>            
                 </tr>
                 <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
+                  <th scope="row">Equipe:</th>
+                  <td>Desenvolvimento / Front-end /Back-end</td>
                 </tr>
                 <tr>
-                  <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
+                  <th>Atividade:</th>
+                  <td>Criação de App</td>
+                </tr>
+                <tr>                  
+                  <th scope="row">Data de inicio:</th>
+                  <td>25/02/2021</td>                  
+                </tr>
+                <tr>
+                  <th>Data Prevista:</th>
+                  <td>10/04/2021</td>
+                </tr>
+                <tr>
+                  <th scope="row">Valor:</th>
+                  <td>R$ 13.500,85</td>
+                </tr>
+                <tr>                  
+                  <th>Status:</th>
+                  <td>Concluído</td>
                 </tr>
               </tbody>
             </table>
@@ -150,7 +173,113 @@
               data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               <div># 273047 Site 25/04/2021</div>
             </button>
-            <div> <button class="btn btn-warning">Editar</button></div>
+            <div> 
+              <button type="button" class="btn btn-warning" data-toggle="modal"
+                data-target="#staticBackdrop_2">Editar</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop_2" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel_2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel_2">Projeto #13810435</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+
+
+
+
+                      <form>
+
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault01">Empresa</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="Liquigás" required>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault02">Projeto</label>
+                            <input type="text" class="form-control" id="validationDefault02" value="Site" required>
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col-md-12
+                           mb-3">
+                            <label for="validationDefault01">Equipe</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="Desenvolvimento / Front-end / Back-end" required>
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col-md-12
+                           mb-3">
+                            <label for="validationDefault01">Atividade</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="Site Publicidade" required>
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault01">Data de Inicio</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="23/03/2021" required>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault02">Data Prevista</label>
+                            <input type="text" class="form-control" id="validationDefault02" value="15/05/2021" required>
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault01">Valor</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="R$ 8.779,90" required>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault04">Status</label>
+                            <select class="custom-select" id="validationDefault04" required>
+                              <option selected disabled value=""></option>
+                              <option>Gerência</option>
+                              <option selected disabled value=""></option>
+                              <option>Requisitos</option>
+                              <option selected disabled value=""></option>
+                              <option>Homologação</option>
+                              <option selected disabled value=""></option>
+                              <option>Concluído</option>
+                            </select>
+                          </div>                          
+                        </div>
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Deseja mesmo fazer essas alterações?
+                            </label>
+                          </div>
+                        </div>
+                      </form>
+
+
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              
+            </div>
           </h2>
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -158,33 +287,42 @@
             <table class="table table-hover table-striped">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
+                  <th scope="col">Empresa:</th>
+                  <td scope="col">Liquigás</td>                  
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <th scope="col">Projeto:</th>
+                  <td scope="col">Site</td>            
                 </tr>
                 <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
+                  <th scope="row">Equipe:</th>
+                  <td>Desenvolvimento / Front-end /Back-end</td>
                 </tr>
                 <tr>
-                  <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
+                  <th>Atividade:</th>
+                  <td>Site Publicidade</td>
+                </tr>
+                <tr>                  
+                  <th scope="row">Data de inicio:</th>
+                  <td>23/03/2021</td>                  
+                </tr>
+                <tr>
+                  <th>Data Prevista:</th>
+                  <td>15/05/2021</td>
+                </tr>
+                <tr>
+                  <th scope="row">Valor:</th>
+                  <td>R$ 8.779,90</td>
+                </tr>
+                <tr>
+                  <th>Status:</th>
+                  <td>Homologação</td>
                 </tr>
               </tbody>
             </table>
+
           </div>
         </div>
       </div>
@@ -194,9 +332,113 @@
           <h2 class="mb-0 d-flex justify-content-between">
             <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
               data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-              <div>#20194 App Delivery 10/04/2021</div>
+              <div>#223485 Sustentação 20/04/2021</div>
             </button>
-            <div> <button class="btn btn-warning">Editar</button></div>
+            <div> 
+              <button type="button" class="btn btn-warning" data-toggle="modal"
+                data-target="#staticBackdrop_3">Editar</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop_3" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel_3" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel_3">Projeto #14100551</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+
+
+
+
+                      <form>
+
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault01">Empresa</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="UZ Games" required>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault02">Projeto</label>
+                            <input type="text" class="form-control" id="validationDefault02" value="Sustentação de Continuidade" required>
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col-md-12
+                           mb-3">
+                            <label for="validationDefault01">Equipe</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="Desenvolvimento / Front-end / Back-end" required>
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col-md-12
+                           mb-3">
+                            <label for="validationDefault01">Atividade</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="Manter site atualizado e em funcionalidade" required>
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault01">Data de Inicio</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="20/04/2021" required>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault02">Data Prevista</label>
+                            <input type="text" class="form-control" id="validationDefault02" value="contrato de 1 ano" required>
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault01">Valor</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="R$ 1.235,60/mês" required>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault04">Status</label>
+                            <select class="custom-select" id="validationDefault04" required>
+                              <option selected disabled value=""></option>
+                              <option>Gerência</option>
+                              <option selected disabled value=""></option>
+                              <option>Requisitos</option>
+                              <option selected disabled value=""></option>
+                              <option>Homologação</option>
+                              <option selected disabled value=""></option>
+                              <option>Concluído</option>
+                            </select>
+                          </div>                          
+                        </div>
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Deseja mesmo fazer essas alterações?
+                            </label>
+                          </div>
+                        </div>
+                      </form>
+
+
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            
+            
+            </div>
           </h2>
         </div>
         <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -204,30 +446,38 @@
             <table class="table table-hover table-striped">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
+                  <th scope="col">Empresa:</th>
+                  <td scope="col">Uz Games</td>                  
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <th scope="col">Projeto:</th>
+                  <td scope="col">Sustentação de Continuidade</td>            
                 </tr>
                 <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
+                  <th scope="row">Equipe:</th>
+                  <td>Desenvolvimento / Front-end / Back-end</td>
                 </tr>
                 <tr>
-                  <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
+                  <th>Atividade:</th>
+                  <td>Manter site atualizado e em funcionalidade</td>
+                </tr>
+                <tr>                  
+                  <th scope="row">Data de inicio:</th>
+                  <td>20/04/2021</td>                  
+                </tr>
+                <tr>
+                  <th>Data Prevista:</th>
+                  <td>contrato de 1 ano</td>
+                </tr>
+                <tr>
+                  <th scope="row">Valor:</th>
+                  <td>R$ 1.235,60/mês</td>
+                </tr>
+                <tr>
+                  <th>Status:</th>
+                  <td>Concluído</td>
                 </tr>
               </tbody>
             </table>
@@ -241,9 +491,112 @@
           <h2 class="mb-0 d-flex justify-content-between">
             <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
               data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              <div> # 273047 Site 25/04/2021</div>
+              <div> # 2778843 Loja Virtual 18/06/2021</div>
             </button>
-            <div> <button class="btn btn-warning">Editar</button></div>
+            <div> 
+              <button type="button" class="btn btn-warning" data-toggle="modal"
+                data-target="#staticBackdrop_4">Editar</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop_4" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel_4" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel_4">Projeto #14751199</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+
+
+
+
+                      <form>
+
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault01">Empresa</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="Bianca Modas" required>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault02">Projeto</label>
+                            <input type="text" class="form-control" id="validationDefault02" value="Loja Virtual" required>
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col-md-12
+                           mb-3">
+                            <label for="validationDefault01">Equipe</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="Desenvolvimento /Front-end / Back-end / Contabilidade" required>
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col-md-12
+                           mb-3">
+                            <label for="validationDefault01">Atividade</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="Criação de Loja Virtual Varejo" required>
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault01">Data de Inicio</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="27/04/2021" required>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault02">Data Prevista</label>
+                            <input type="text" class="form-control" id="validationDefault02" value="18/06/2021" required>
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault01">Valor</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="R$ 10.311,70" required>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="validationDefault04">Status</label>
+                            <select class="custom-select" id="validationDefault04" required>
+                              <option selected disabled value=""></option>
+                              <option>Gerência</option>
+                              <option selected disabled value=""></option>
+                              <option>Requisitos</option>
+                              <option selected disabled value=""></option>
+                              <option>Homologação</option>
+                              <option selected disabled value=""></option>
+                              <option>Concluído</option>
+                            </select>
+                          </div>                          
+                        </div>
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Deseja mesmo fazer essas alterações?
+                            </label>
+                          </div>
+                        </div>
+                      </form>
+
+
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            
+            </div>
           </h2>
         </div>
         <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -251,38 +604,44 @@
             <table class="table table-hover table-striped">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
+                  <th scope="col">Empresa:</th>
+                  <td scope="col">Bianca Modas</td>                  
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <th scope="col">Projeto:</th>
+                  <td scope="col">Loja Virtual</td>            
                 </tr>
                 <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
+                  <th scope="row">Equipe:</th>
+                  <td>Desenvolvimento /Front-end / Back-end / Contabilidade</td>
                 </tr>
                 <tr>
-                  <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
+                  <th>Atividade:</th>
+                  <td>Criação de Loja Virtual Varejo</td>
+                </tr>
+                <tr>                  
+                  <th scope="row">Data de inicio:</th>
+                  <td>27/04/2021</td>                  
+                </tr>
+                <tr>
+                  <th>Data Prevista:</th>
+                  <td>18/06/2021</td>
+                </tr>
+                <tr>
+                  <th scope="row">Valor:</th>
+                  <td>R$ 10.311,70</td>
+                </tr>
+                <tr>
+                  <th>Status:</th>
+                  <td>Requisitos</td>
                 </tr>
               </tbody>
             </table>
+
           </div>
         </div>
       </div>
-
-
-    </div>
-  </div>
-</div>
+      
+      

@@ -40,3 +40,7 @@ a,
 a.btn {
   transition: all 0.6s ease;
 }
+img {
+  height: 40px;
+  
+}
