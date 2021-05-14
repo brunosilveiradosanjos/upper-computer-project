@@ -11,7 +11,4 @@ app.use(express.json());
 app.use('/api/v1/assignments', assignmentRouter);
 app.use('/api/v1/customers', customerRouter);
 
-const port = 3000;
-app.listen(port, () => {
-    console.log(`Express server listening on port ${port}`);
-})
+module.exports = app;
