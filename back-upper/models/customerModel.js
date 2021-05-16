@@ -20,11 +20,7 @@ const customerSchema = new mongoose.Schema({
         unique: true
     },
     cep: Number,
-    login: {
-        type: String,
-        required: [true, 'O cliente deve possuir um login'],
-        unique: true
-    },
+    login: String,
     password: {
         type: String,
         required: [true, 'O cliente deve possuir um senha']

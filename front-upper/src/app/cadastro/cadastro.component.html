@@ -1,25 +1,50 @@
-<div class="d-flex justify-content-center align-items-center login-container">
-  <form class="login-form text-center">
-    <h1 class="mb-5 font-weight-light text-uppercase">Cadastro</h1>
-    <div class="form-group">
-      <input type="text" class="form-control rounded-pill form-control-lg" placeholder="usuario">
-    </div>
-    <div class="form-group">
-      <input type="password" class="form-control rounded-pill form-control-lg" placeholder="senha">
-    </div>
-    <div class="forgot-link form-group d-flex justify-content-between align-items-center">
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="remember">
-        <label class="form-check-label" for="remember">Lembrar senha</label>
+<div class="card text-center m-4">
+  <div class="card-header">
+    Cadastro
+  </div>
+  <div class="card-body">
+    <form #postForm="ngForm" (ngSubmit)="onCreateCustomer(postForm.value)">
+      <div class="form-row">
+        <div class="form-group col-12 col-md-6">
+          <label for="name">Nome</label>
+          <input type="text" class="form-control" id="name" required ngModel name="name">
+        </div>
+        <div class="form-group col-12 col-md-6">
+          <label for="company">Empresa</label>
+          <input type="text" class="form-control" id="company" required ngModel name="company">
+        </div>
       </div>
-      <a href="#">Esqueceu a senha?</a>
-    </div>
-    <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase">Log in</button>
-    <p class="mt-3 font-weight-normal">Não tem cadastro?
-      <a [routerLink]="['/cadastro']">
-        <strong>Cadastrar</strong>
-      </a>
-    </p>
-    <button type="button" class="btn btn-light" [routerLink]="['']">Retornar</button>
-  </form>
+      <div class="form-row">
+        <div class="form-group col-12 col-md-4">
+          <label for="phoneNumber:">Celular</label>
+          <input type="number" class="form-control" id="phoneNumber" required ngModel name="phoneNumber">
+        </div>
+        <div class="form-group col-12 col-md-4">
+          <label for="cpf">CPF</label>
+          <input type="number" class="form-control" id="cpf" required ngModel name="cpf">
+        </div>
+        <div class="form-group col-12 col-md-4">
+          <label for="cep">CEP</label>
+          <input type="number" class="form-control" id="cep" required ngModel name="cep">
+        </div>
+      </div>
+      <div class="form-row d-flex justify-content-center">
+        <div class="form-group col-12 col-md-6">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" required ngModel name="email">
+        </div>
+      </div>
+      <div class="form-row d-flex justify-content-center">
+        <div class="form-group col-12 col-md-6">
+          <label for="password">Senha</label>
+          <input type="password" class="form-control" id="password" required ngModel name="password">
+        </div>
+      </div>
+      <!-- <button class="btn btn-outline-primary" type="submit" [disabled]="!postForm.valid">Cadastrar</button> -->
+      <button class="btn btn-outline-primary" type="submit">Cadastrar</button>
+    </form>
+  </div>
+  <div class="card-footer text-muted">
+    <button type="button" class="btn btn-outline-secondary" [routerLink]="['']">Retornar</button>
+  </div>
 </div>
