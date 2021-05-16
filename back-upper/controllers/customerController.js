@@ -18,8 +18,25 @@ exports.getAllCustomers = async (req, res) => {
     }
 }
 
-exports.getOneCustomer = (req, res) => {
-    res.status(200).json({ status: 'ok', message: `Hello world from getOneCustomer!` })
+exports.getOneCustomer = async (req, res) => {
+    try {
+        const customer = await Customer.findById(req.params.id);
+
+        console.log(customer);
+
+        res.status(200).json({
+            status: 'success',
+            data: {
+                customer
+            }
+        });
+
+    } catch (err) {
+        res.status(404).json({
+            status: 'fail',
+            message: `Something went wrong: ${err}`
+        });
+    }
 }
 
 exports.createCustomer = async (req, res) => {
