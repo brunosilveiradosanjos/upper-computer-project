@@ -3,8 +3,8 @@
     <div class="card-header">
       Cadastro
     </div>
-    <div class="card-body">
-      <form #postForm="ngForm" (ngSubmit)="onCreateCustomer(postForm.value)">
+    <form #postForm="ngForm" (ngSubmit)="onCreateCustomer(postForm.value)">
+      <div class="card-body">
         <div class="form-row">
           <div class="form-group col-12">
             <label for="name">Nome</label>
@@ -31,7 +31,6 @@
             <input type="number" class="form-control" id="cep" required ngModel name="cep">
           </div>
         </div>
-
         <div class="form-row">
           <div class="form-group col-12 col-md-6">
             <label for="email">Email</label>
@@ -42,11 +41,12 @@
             <input type="password" class="form-control" id="password" required ngModel name="password">
           </div>
         </div>
-      </form>
-    </div>
-    <div class="card-footer text-muted">
-      <button type="button" class="btn btn-outline-secondary" [routerLink]="['']">Retornar</button>
-      <button class="btn btn-outline-primary" type="submit" [disabled]="!postForm.valid">Cadastrar</button>
-    </div>
+      </div>
+      <div class="card-footer text-muted">
+        <button type="button" class="btn btn-outline-secondary" [routerLink]="['']">Retornar</button>
+        <button type="submit" class="btn btn-outline-primary" [disabled]="!postForm.valid">Cadastrar</button>
+      </div>
+    </form>
   </div>
+
 </div>
